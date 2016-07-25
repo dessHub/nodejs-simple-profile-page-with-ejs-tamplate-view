@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consultancy Site</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <div>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  	<div class="container">
+  		<div class"">
+  			<a class="navbar-brand" href="/"><h1>SwahiliBox Consultancy</h1></a>
+  		</div>
+  		<div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav text-center">
+              <li><a href="/">Home</a></li>
+              <li><a href="/demo" method="get" action="/demo">View Developers</a></li>
+           </ul>
+           <div>
+             <a href="/demo" class="btn btn-info btn-lg" method="get" action="/demo">
+             <span class="glyphicon glyphicon-log-in"></span> Log In
+             </a>
+           </div>
+        </div>
+
+  	</div>
+  </nav>
+  </div>
+
+<!-- start of big wrapper -->
+<div row="row">
+
+  <!-- Left Container-->
+      <div class="col-sm-2">
+
+      </div><!-- End of Left Container -->
+
+<!-- Middle containter -->
+      <div class="col-sm-8">
+
+  <div class="row container-fluid"  style="background-color:#d1c4e9  !important">
+
+<div class="col-sm-8"  ><!--Main content -->
+    <div >
+		<div class="row">
+      <div class="col-sm-4 class="container-fluid"">
+        <a ><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAfzAAAAJGM1NjFiZTk5LWQyNjYtNDc3My05MTA4LWEzYzY4YjgyNGYzZQ.jpg" class="img-fluid " width="154" height="136" style="border-radius:0%" ></a>
+
+      </div>
+      <div class="col-sm-8 class="container-fluid"">
+        <h2> <%= fname %> <%= lname %> </h2>
+        <h4> <%= position %>r</h2>
+        <h5>Current <small>Swahili Box</h3>
+      </div>
+
+		</div>
+</div>
+
+<div class="row container-fluid">
+  <div class="col-sm-12">
+  <div class="page-header">
+<h3>Bio</h3>
+</div>
+<p><%= bio %></p>
+
+</div>
+</div>
+
+
+<div class="row container-fluid">
+<div class="col-sm-12">
+  <div class="form-group">
+    <div class="page-header">
+   <h3><label >Projects</label></h3>
+ </div>
+   <h4><%= title %> </h4>
+   <h5> <a href="#"><%= link %></a></h5>
+
+  </div>
+</div>
+</div>
+
+<div class="row container-fluid">
+  <div class="form-group">
+    <div class="page-header">
+   <h3><label >Skills</label></h3>
+ </div>
+   <ul>
+  <li>HTML5</li>
+  <li>PHP</li>
+  <li>PYTHON</li>
+   </ul>
+  </div>
+</div>
+
+</div><!-- End of main content -->
+
+<!-- Begining of sidebar -->
+<div class="col-sm-4">
+<div class="row container-fluid">
+<div class="col-sm-12">
+<div class="page-header">
+<h3>Contact Me</h3>
+</div>
+<h4>Email:<small><%= email %></h4>
+  <h4>Mobile No:<small><%= phonenumber %></h4>
+</div>
+</div>
+
+<div class="row container-fluid">
+<div class="col-sm-12">
+<div class="page-header">
+<h3>Links</h3>
+</div>
+<h4><a href="#"><%= gitHub%></a></h4>
+<h4><a href="#"><%= gitLab%></a></h4>
+<h4><a href="#"><% linkedin%></a></h4>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="col-sm-2"></div>
+
+</div><!-- End of big wraper -->
+</body>
+
+</div>

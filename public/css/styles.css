@@ -1,0 +1,10 @@
+.navbar-brand h1{
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+body{
+  padding: 40px;
+  background-color: black;
+}
